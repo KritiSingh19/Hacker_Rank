@@ -1,0 +1,48 @@
+Rohit want to add money in his money bank on daily basis, each day he doubled his money how much he has deposited yesterday, after number days how much total money he has in his money bank. He started his saving from Rs 1
+
+Input Format
+
+one integer input whoch will denote total number of days
+
+Constraints
+
+Constraint maximum this practice will run for 31 days
+
+Output Format
+
+output will have two lines, first line will display list of his saving on daily basis, and second line will display total sum of moineybank
+
+Sample Input 0
+
+5
+Sample Output 0
+
+1 2 4 8 16
+31
+
+
+
+
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+   int days, sum =0, money = 1;
+   cin>>days;
+   for(int i =1; i<= days; i++){
+   cout<<money<<" ";
+   sum = sum+money;
+   money = money*2;
+   }
+   cout<<endl;
+   cout<<sum;
+    return 0;
+}
