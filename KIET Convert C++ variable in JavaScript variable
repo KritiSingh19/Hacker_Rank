@@ -1,0 +1,48 @@
+Mr. Krishna developed a logic in C++ but client requested him to channge his logic in javascript, so he decided to write a logic to Convert a c++ variable into javascript variable as per specified condition(s), Javascript variables do not allow any underscore whereas c++ variables allow underscore. if a variable in C++ is defined as- my_variable convert it into javascript variable (replace _ and after underscore first letter must be in caps) myVariable
+
+Input Format
+
+One line input as the variable name which contains underscore
+
+Constraints
+
+To add underscore in variable name to check the accuracy of program.
+
+Output Format
+
+One line which gives output in specified format
+
+Sample Input 0
+
+my_variable
+Sample Output 0
+
+myVariable
+
+
+
+
+
+#include <bits/stdc++.h>
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main(){    
+    string str;
+    getline(cin,str);
+    for(int j=0;j<str.size();j++)
+    {    
+        if(str[j]=='_')
+        {
+            str[j+1]=(char)((int)str[j+1]-32);
+            continue;
+        }
+        cout<<str[j];
+    }
+    return 0;
+}
