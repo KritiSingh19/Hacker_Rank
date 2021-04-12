@@ -1,0 +1,45 @@
+Ravi got a task to merge two sequences. He got a number as an input and alloted a task to print all the natural number upto ‘n’ in both forward and backward manner. To solve this issue he can use only “Recursion” approach.Recursion is calling function inside the same function.
+
+Input Format
+
+Accept a number ‘n’ as input
+
+Constraints
+
+0 <= n <= 50
+
+Output Format
+
+Print the natural number upto ‘n’ in both forward & backward problem.
+
+Sample Input 0
+
+5
+Sample Output 0
+
+1 2 3 4 5 5 4 3 2 1
+
+
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n, j=1;
+    cin>>n;
+    for(int i=1; i<=2*n; i++){
+    if(i>n){
+    cout<<i-j<<" ";
+    j=j+2;
+    }
+    else cout<<i<<" ";
+    }
+    return 0;
+}
