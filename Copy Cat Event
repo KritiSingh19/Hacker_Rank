@@ -1,0 +1,39 @@
+Hritick enters a string of size ‘n’ and wants to get the same string in output.
+
+Input Format
+
+Accept an input string.
+
+Constraints
+
+1 <= n <= 20
+
+Output Format
+
+Print the same string as input.
+
+Sample Input 0
+
+Hritick
+Sample Output 0
+
+Hritick
+
+
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    string str;
+    cin>>str;
+    cout<<str;
+    return 0;
+}
