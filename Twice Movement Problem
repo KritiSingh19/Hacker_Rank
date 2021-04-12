@@ -1,0 +1,40 @@
+Sunny got the task to devide & multiply number by 4. For this he is asked to use shift operators only. He got a number ‘n’ and asked to print the output after devide & multiply number by 4.
+
+Input Format
+
+Accept a number ‘n’as input
+
+Constraints
+
+1 <= n <= 50
+
+Output Format
+
+Print the output after multiplication and division by 4.
+
+Sample Input 0
+
+4
+Sample Output 0
+
+1 16
+
+
+
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n;
+    cin>>n;
+    cout<<(n/4)<<" "<<(n*4);
+    return 0;
+}
