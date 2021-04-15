@@ -59,7 +59,7 @@ int main() {
     while(sum!=0){
     m = sum % 10;
     result = result+m;
-    series= sum/10;
+    sum= sum/10;
     }
     cout<<result;
     return 0;
