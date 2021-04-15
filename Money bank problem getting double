@@ -38,9 +38,10 @@ int main() {
    int days, sum =0, money = 1;
    cin>>days;
    for(int i =1; i<= days; i++){
+   money = money*2;
    cout<<money<<" ";
    sum = sum+money;
-   money = money*2;
+   
    }
    cout<<endl;
    cout<<sum;
