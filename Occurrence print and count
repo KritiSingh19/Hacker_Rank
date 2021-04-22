@@ -1,0 +1,59 @@
+Count all the Occurrence in the string and print.
+
+Input Format
+
+i/p will be alphabates (Upper and Lower Case) and Numbers.
+
+Constraints
+
+Only string is there.
+
+Output Format
+
+if occured only then Print numbers/alphabets then total occurances.
+
+Sample Input 0
+
+aabb1231
+Sample Output 0
+
+1-2
+2-1
+3-1
+a-2
+b-2
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    string str;
+    int count=1;
+    getline(cin,str);
+    sort(str.begin(), str.end());
+    for(int i=0; i<str.length(); i++){
+        if(str[i]=='#'){
+                continue;
+            }
+        for(int j=i+1; j<str.size(); j++){
+           
+            if(str[i]==str[j]){
+                count++;
+                str[j]='#';
+            }
+            
+        
+        }
+        cout<<str[i]<<"-"<<count<<endl;
+        count=1;
+    }
+    return 0;
+}
