@@ -1,0 +1,84 @@
+XYZ is a currency chest bank. tha bank has sufficient notes of different denomination at different time. possible denominations are
+
+The different denomanination notes can be in bank as per availibility =
+
+2000
+
+500
+
+200
+
+100
+
+50
+
+20
+
+10
+
+5
+
+2
+
+1
+
+A branch of a bank demands for X amount.Then XYZ bank issue minimum number of notes as per availabilty of denominations
+
+Input Format
+
+Three line input First line input is integer which shows X amounnt second line input is integer which contains (N) different denominatios are available third line input is an array which will contain N denominations in random order from possible denominations
+
+Constraints
+
+1<= X <=10^5 1<= N <=10
+
+Output Format
+
+Single line integer output
+
+Sample Input 0
+
+2353371
+8
+1 5 200 2000 500 100 50 20
+Sample Output 0
+
+1183
+
+
+
+
+
+
+
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    int num, n, sum=0, q, k=0;
+    cin>>num;
+    cin>>n;
+    int arr[n];
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+    sort(arr, arr + n, greater<int>());
+    while(num!=0){
+        q = num/arr[k];
+        num = num % arr[k];
+        k++;
+        sum= sum+q;  
+    }
+    cout<<sum;
+      
+    return 0;
+}
