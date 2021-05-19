@@ -1,0 +1,60 @@
+Vishal got a task to verify that the given string contain “ra’ as substring or not.
+
+Input Format
+
+Input a string of length n.
+
+Constraints
+
+Nothing
+
+Output Format
+
+Print ‘Yes’ else ‘No’ accordingly.
+
+Sample Input 0
+
+aaryn
+Sample Output 0
+
+No
+Sample Input 1
+
+araa
+Sample Output 1
+
+Yes
+
+
+
+
+
+
+
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    string str;
+    int k=0;
+    cin>>str;
+    for(int i=0; i<str.size(); i++){
+        if(str[i]=='r'){
+            if(str[i+1]=='a')
+                k++;
+        }
+    }
+    if(k==1)
+        cout<<"Yes";
+    else
+        cout<<"No";
+    return 0;
+}
