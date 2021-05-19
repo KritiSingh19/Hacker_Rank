@@ -1,0 +1,55 @@
+Tushar just started coding in school. He took a lecture of array and alloted a task to find the sum of first 3 elements of an array. Please help him out.
+
+Input Format
+
+Given the value of ‘n’ and an array of size ‘n’ as input in 2 separate lines.
+
+Constraints
+
+1<= n <= 20
+
+Output Format
+
+Print the obtained sum
+
+Sample Input 0
+
+4
+2 8 1 5
+Sample Output 0
+
+11
+Sample Input 1
+
+5
+-3 8 -4 14 5
+Sample Output 1
+
+1
+
+
+
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n, s=0;
+    cin>>n;
+    int arr[n];
+    for(int i=0; i<3; i++){
+        cin>>arr[i];
+        if(i<3)
+            s=s+arr[i];
+       
+    }
+    cout<<s;
+    return 0;
+}
